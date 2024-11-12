@@ -1,0 +1,14 @@
+{
+  "name": "SyncUp",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "forwardPorts": [5173, 8000],
+  "customizations": {
+    "vscode": {
+      "extensions": ["saoudrizwan.claude-dev", "GitHub.copilot"]
+    }
+  },
+  "postCreateCommand": "npm install -g vite"
+}
